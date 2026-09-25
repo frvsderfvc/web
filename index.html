@@ -1,0 +1,210 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>谷歌翻译</title>
+<meta name="keywords" content="谷歌翻译">
+<meta name="description" content="谷歌翻译，Google 免费提供的这项服务可在简体中文和其他 100 多种语言之间即时翻译字词、短语和网页。">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+<style>
+html{overflow-y:scroll;overflow:-moz-scrollbars}
+body{background:#f0f0e7;margin-top:0px;}
+</style>
+<script src="./web/if.js"></script>
+</head>
+<body oncontextmenu="return false;" marginwidth="0" marginheight="0">
+<div style="margin:0 auto;text-align:center;height:100%;">
+<script type="text/javascript">
+document.write('<center><iframe src='+fanyi+' scrolling="no" width="100%" frameborder="0" marginwidth="0" allowtransparency="true" marginheight="0" style="width:100%;height:1200px"></iframe></center>');
+</script><center><iframe src="http://so.qqkk8.com/10/if/c/fanyi.htm" scrolling="no" width="100%" frameborder="0" marginwidth="0" allowtransparency="true" marginheight="0" style="width:100%;height:1200px"></iframe></center><center><iframe src="http://so.qqkk8.com/10/if/c/fanyi.htm" scrolling="no" width="100%" frameborder="0" marginwidth="0" allowtransparency="true" marginheight="0" style="width:100%;height:1200px"></iframe></center><center><iframe src="./index_files/fanyi.html" scrolling="no" width="100%" frameborder="0" marginwidth="0" allowtransparency="true" marginheight="0" style="width:100%;height:1200px"></iframe></center>
+</div>
+<script charset="UTF-8" id="LA_COLLECT" src="./web/js-sdk-pro.min.js"></script>
+#document
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <title>翻译大全</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            overflow: hidden; /* 隐藏页面整体滚动条，彻底全屏 */
+            background: #f0f0e7;
+            font-size: 1.1rem;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        /* 整体布局占满整个视口 */
+        .container {
+            display: flex;
+            gap: 15px;
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+        }
+        /* 左侧导航 */
+        .left-nav {
+            width: 220px;
+            background: #f0f0e7;
+            padding: 15px;
+            border-radius: 0; /* 去掉圆角，贴合边缘 */
+            overflow-y: auto;
+            scrollbar-width: thin;
+        }
+        .left-nav::-webkit-scrollbar {
+            width: 6px;
+        }
+        .left-nav::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 3px;
+        }
+        .left-nav::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        /* 右侧主内容 */
+        .main {
+            flex: 1;
+            background: #fff;
+            border-radius: 0; /* 去掉圆角 */
+            box-shadow: none;
+        }
+        /* 列表 */
+        ul {
+            list-style: none;
+        }
+        li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        /* 链接基础样式 */
+        a {
+            color: #3273dc;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 4px 6px;
+            border-radius: 4px;
+            transition: background 0.2s ease;
+        }
+        a:hover {
+            color: #148f77;
+            background: #e8e8dc;
+        }
+        /* 当前选中项样式 */
+        a.active {
+            background: #d9e8f5;
+            color: #148f77;
+        }
+        /* 标签样式：失效、新窗口、符号 */
+        .tag-disabled {
+            font-size: 0.8rem;
+            color: #999;
+            font-style: italic;
+            margin-left: 4px;
+        }
+        .tag-blank {
+            font-size: 0.8rem;
+            color: #cc33cc;
+            font-style: italic;
+            margin-left: 4px;
+        }
+        .tag-green {
+            color: green;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        /* iframe 完全铺满 */
+        #engine {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: none;
+        }
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-nav {
+                width: 100%;
+                max-height: 240px;
+            }
+            .main {
+                flex: 1;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="left-nav">
+            <ul id="foo">
+<h1>翻译大全</h1>
+                <li><a href="https://cn.bing.com/translator" target="engine" class="active">微软翻译</a></li>
+                <li><a href="https://yuming111.de5.net/main" target="engine" class="active">神秘网站</a></li>
+                <li><a href="https://fanyi.youdao.com/" target="engine">有道翻译</a></li>
+                <li><a href="https://media.youdao.com/#/workbench?from=fanyiweb_sidebar" target="engine">有道视频翻译</a></li>
+                <li><a href="http://www.fuhao8.com/" target="_blank">
+                    <span class="tag-green">→ 符号大全</span>
+                </a></li>
+                <li><a href="https://wenku.baidu.com/ndlaunch/browse/chat?" target="engine">百度文库AI</a></li>
+                <li><a href="http://fanyi.baidu.com" target="engine">百度翻译</a></li>
+                <li><a href="https://fanyi.sogou.com/text" target="engine">搜狗翻译</a></li>
+                <li><a href="https://www.iciba.com/translate" target="engine">iciba翻译</a></li>
+                <li><a href="https://fanyi1234.com/lang/" target="engine">文本在线翻译</a></li>
+                <li><a href="https://app.xunjiepdf.com/fanyizh2en/" target="engine">迅捷翻译</a></li>
+                <li><a href="https://fanyi.so.com/?src=tab_web#" target="engine">360翻译</a></li>
+                <li><a href="https://fanyi.qq.com/" target="engine">腾讯翻译君</a></li>
+                <li>
+                    <a href="http://translate.google.com.hk" target="engine">
+                        谷歌翻译 <span class="tag-disabled">已失效</span>
+                    </a>
+                </li>
+                <li><a href="https://tran.httpcn.com/Fanyi/" target="engine">汉程翻译</a></li>
+                <li><a href="https://niutrans.com/trans?type=text" target="engine">小牛翻译</a></li>
+                <li><a href="https://doubao.com/chat/" target="engine">豆包翻译</a></li>
+                <li><a href="https://tongshengchuanyiwang.com/online/shishi/" target="engine">同声翻译王</a></li>
+                <li><a href="https://translate.alibaba.com/" target="engine">阿里翻译</a></li>
+                <li><a href="https://fanyi.xfyun.cn/console/trans/text" target="engine">讯飞翻译</a></li>
+                <li><a href="https://transmart.qq.com/zh-CN/index" target="engine">腾讯交互翻译</a></li>
+                <li><a href="https://fanyi.caiyunapp.com/" target="engine">彩云小译</a></li>
+                <li><a href="https://belindoc.com/zh?from=ai-tab.cn" target="engine">Belin Doc</a></li>
+                <li>
+                    <a href="https://translate.volcengine.com/" target="engine">
+                        火山翻译 <span class="tag-disabled">已失效</span>
+                    </a>
+                </li>
+                <li><a href="https://tran.httpcn.com/fanyiweb/" target="engine">网页翻译</a></li>
+                <li>
+                    <a href="https://dictionary.cambridge.org/zhs/" target="_blank">
+                        剑桥词典 <span class="tag-blank">新窗口</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <iframe id="engine" name="engine" src="https://cn.bing.com/translator" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" allow="fullscreen">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('#foo a');
+        links.forEach(link => {
+            link.addEventListener('click', function(){
+                links.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+
+
+<script>LA.init({id:"KJVjNNpnJfgOIq4P",ck:"KJVjNNpnJfgOIq4P"})</script>
+
+</body>
